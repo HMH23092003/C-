@@ -1,0 +1,67 @@
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB
+$ git init
+Initialized empty Git repository in F:/LAB/.git/
+
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB (master)
+$ git remote add origin https://github.com/HMH23092003/C-.git
+
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hehe.cpp
+        hehe.exe
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB (master)
+$ git add .
+
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB (master)
+$ git commit -m "up file.cpp"
+[master (root-commit) 9ba14c5] up file.cpp
+ 2 files changed, 6 insertions(+)
+ create mode 100644 hehe.cpp
+ create mode 100644 hehe.exe
+
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB (master)
+$ git push origi master
+fatal: 'origi' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB (master)
+$ git push origin master
+fatal: unable to access 'https://github.com/HMH23092003/C-.git/': Could not resolve host: github.com
+
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB (master)
+$ git branch
+* master
+
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 748.48 KiB | 7.72 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+error: RPC failed; curl 56 OpenSSL SSL_read: Connection was reset, errno 10054
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+
+AD@LAPTOP-cua-Hiu MINGW64 /f/LAB (master)
+$
