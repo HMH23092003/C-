@@ -12,7 +12,7 @@ int main()
 	float S1=0,S2=1,S3=1;
 	for (int i=1;i<=n;i++)
 	{
-		S1+= (float)pow(x,n)/ giaithua(i);
+		S1+= (float)pow(x,i)/ giaithua(i);
 	}
 	for (int i=1;i<=n;i++)
 	{

@@ -1,16 +1,23 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main() {
-	int n,m,a[100][100];
-	cin >>m >>n;
-	for(int i=1; i<=m; i++)
-		for(int j=1; j<=n; j++) {
-			cin >>a[i][j];
-		}
-	for(int i=1; i<=m; i++) {
-		for(int j=1; j<=n; j++) {
-			cout <<a[i][j] << " ";
-		}
-		cout <<endl;
+int n,maxcs=0;
+int maxchuso(int n)
+{
+    if (n == 0) return 0;
+    while (n > 0) 
+	{
+        int tg = n % 10;
+        n /= 10;
+        if (tg >= maxcs) maxcs = tg;
+    }
+    return maxcs;
+}
+int main()
+{
+    do
+    {
+	   cin >> n;
 	}
+    while(n<=0);
+    cout <<maxchuso(n);
 }
