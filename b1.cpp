@@ -17,7 +17,7 @@ int main()
 		cin >>n;
 	}
 	while(n<=0);
-	for(int i=1;i<n;i++)
+	for(int i=0;i<n;i++)
 	{
 		if(checknt(i)==true) dem++;
 	}
